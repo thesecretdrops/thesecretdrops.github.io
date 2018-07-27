@@ -49,8 +49,17 @@
     max-width: 100%;
     height: auto;
  }
-
-
+	
+.main{
+display: inline-block;
+ 			float:left;
+			padding-left: 5%;
+ 			padding-right: 5%;
+			padding-top: 5%;
+ 			padding-bottom: 4%;
+	
+	}
+	
    .header
    {
     height: auto;
@@ -128,9 +137,9 @@
 
 <div class="left">	
 <br>
-	<h2>
+	<div class = "main
 	<img src="bonfiredrops.github.io/images/bonfirelogo.jpg" alt="logo" style="max-width:100%"; class="center"> <br>
-	</h2>
+	</div>
 <br>
 <br>
 	<button class="btn btn-primary btn-lg" style="background:firebrick" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0;})">Stop Audio</button>
