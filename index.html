@@ -391,9 +391,8 @@ img.a {
 <script>
 function myFunction(x) {
   x.classList.toggle("change");
-  var dropdown = document.getElementById('myDropdown').style;
-  dropdown.display = dropdown.display === 'none' ? 'block' : 'none';
-	}
+    document.getElementById('myDropdown').style.display = document.getElementById('myDropdown').style.display =='block' ?   'none' : 'block';
+}
 </script>
 
 </body>
