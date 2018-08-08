@@ -163,11 +163,19 @@ display: inline-block;
   <div class="bar2"></div>
   <div class="bar3"></div>
 </div>
-	
+ <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
 	<img src="bonfiredrops.github.io/images/bonfirelogo.jpg" alt="logo" style="max-width: 100%; max-height: 50%; display: flex; justify-content: center;"; class="center"> <br>
 </div>
 	
-
+ 
+	
+<!-- End Banner -->
+	
 <!-- Below is the Google Ad Unit Info --> 
 <!-- Above is the Google Ad Unit Info --> 
 
@@ -372,6 +380,18 @@ display: inline-block;
 <script>
 function myFunction(x) {
     x.classList.toggle("change");
+	  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 }
 </script>
 
